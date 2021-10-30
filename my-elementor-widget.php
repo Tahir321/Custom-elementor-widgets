@@ -27,7 +27,7 @@ if( !defined('ABSPATH')) exit();
  * @since 1.0.0
 */
 
-class MY_ELementor_Widget{
+final class MY_ELementor_Widget{
     
     // Plugin version 
     const VERSION = '1.0.0';

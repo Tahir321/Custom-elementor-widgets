@@ -2,7 +2,7 @@
 
 namespace Elementor;
 
-class MYEW_Example_Wiget extends Widget_Base{
+class MYEW_Example_Widget extends Widget_Base{
     public function get_name(){
         return 'myew-example-widget-id';
     }
@@ -36,7 +36,7 @@ class MYEW_Example_Wiget extends Widget_Base{
         );
         $this->end_controls_section(); 
 
-        // Styles Tab 
+        // Style Tab 
         $this->style_tab();
     }
 
@@ -60,6 +60,6 @@ class MYEW_Example_Wiget extends Widget_Base{
     }
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new MYEW_Example_Wiget());
+Plugin::instance()->widgets_manager->register_widget_type(new MYEW_Example_Widget());
 
 ?>
